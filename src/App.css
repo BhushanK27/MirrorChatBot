@@ -1,0 +1,154 @@
+body
+{
+  background-color: rgb(19, 18, 18);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+#Header
+{
+  border-bottom: 1.5px #66c1eb solid;
+  background-color: #959899;
+  border-radius: 10px 10px 0 0;
+}
+
+#headertxt{
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-right:60px;
+
+}
+
+img{
+  width: 2rem;
+  height: 2rem;
+  margin-left: 20px;
+  margin-top: 5px;
+  float: left;
+}
+
+.main{
+  background:white;
+  height: 60vh;
+  width: 400px;
+  text-align: center;
+  box-shadow: 1px 1px 20px 20px rgba(0, 0, 0, 0.14);
+  border-radius: 9.5px;
+}
+
+#Footer{
+  position: absolute;
+  margin-top: 0;
+}
+
+#msg{
+  height: 30px;
+  width: 305px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 1px solid;
+}
+ 
+
+button{
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(238, 240, 111); 
+  width:80px;
+  border: 1px solid;
+}
+
+button:hover
+{
+  background-color: #959899;
+}
+
+.display{
+  border: none;
+  padding: 5px;
+  padding-bottom: 14px;
+  /* padding-right: 5px;
+  padding-left: 5px; */
+  /* font: 24px/36px sans-serif; */
+  width: 97%;
+  height: 85%;
+  overflow-y: auto;
+}
+
+#bot{
+  font-size: medium;
+  border-radius:34px 30px 30px 5px ;
+  background-color: #dfe6e9;
+  margin-bottom: 15px;
+  float:left;
+  display: block; 
+  max-width:max-content;
+  min-width: 30%;
+  min-height: 30px;
+  max-height: max-content;
+  padding: 2%; 
+  
+}
+#user{
+  font-size: medium;
+  border-radius: 30px 34px 5px 30px;
+  background-color: #66c1eb;
+  margin-bottom: 15px;
+  float: right;
+  display: block; 
+  max-width:max-content;
+  min-width: 30%;
+  min-height: 30px;
+  max-height: max-content;
+  padding: 2%;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: inherit;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid #66c1eb;
+  border-radius: 15px;
+  height: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #959899;
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:  #b5dbeb;  
+  
+}
+
+@media (max-width:767px){
+  .App{
+    width: 350px ; 
+    height: 375px;
+  }
+  .main{
+    width: 350px ; 
+    height: 355px;
+  }
+  #Footer{
+    width:50vw;
+  }
+  .display{
+    padding-bottom: 3px;
+  }
+ 
+} 
+@media (max-height:620px){
+ /* body{ 
+    height: 375px;
+  }*/
+  .display{
+    padding-bottom: 3px;
+  }
+}
