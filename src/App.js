@@ -34,17 +34,19 @@ function App() {
     }
       // console.log(usermsg)
       setMsg("")
-      
       localStorage.setItem('user', JSON.stringify(usermsg))
-
+      
   }
+
   return (
     <div className="App">
       <div className="main">
 
         <div id="Header">
           <img src= {logo} alt="chatbot logo" />
-          <p id={"headertxt"}>ChatBot</p>
+          <p id={"headertxt"}>ChatBot
+            <button id={'clear'} onClick={() => { localStorage.removeItem("user"); setuserMsg([]);}}>Reset</button>
+          </p>
         </div>
 
         <div className='display'  >
@@ -59,9 +61,8 @@ function App() {
                   </div> <br/>
                   <div id={'bot'} >{item} </div>
                   <br />
-
+                
                 </>
-              
               ))
             }
           </div>
@@ -70,7 +71,7 @@ function App() {
       </div>
       <div id='Footer'>
         <input id="msg" autoComplete='off' placeholder="Type here..." value={msg} onChange={(e) => setMsg(e.target.value)} onKeyPress={handleKeyPress}></input>{" "}
-        <button 
+        <button id={'send'}
         onClick={displayer}>Send</button>
       </div>
     </div>
